@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html
+  lang="en"
+  xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:th="http://www.thymeleaf.org"
+>
+  <head>
+    <style>
+      td {
+        word-break: break-all;
+        padding: 0 !important;
+      }
+
+      .td-master {
+        padding-right: 6px !important;
+      }
+
+      @media print {
+        @page {
+          size: auto;
+          margin: 0mm;
+          size: A4;
+        }
+
+        body {
+          width: 210mm;
+          height: 148mm;
+        }
+        td {
+          padding: 0 !important;
+        }
+
+        table {
+          border: none;
+        }
+      }
+    </style>
+  </head>
+  <body style="padding: 10px 0 10px 50px; font-size: 12px">
+    <div style="width: 800px">
+      <div class="fw-bold" style="padding: 10px 0px 10px 100px !important">
+        STRUK PEMBELIAN LISTRIK PRABAYAR
+      </div>
+      <table style="margin: 0 !important">
+        <tr>
+          <td style="width: 40%" class="td-master">
+            <table>
+              <tr>
+                <td style="width: 30%; padding: 0 14px 0 0 !important">
+                  NO METER
+                </td>
+                <td style="width: 7px">:</td>
+                <td>
+                  <span class=""> $nometer </span>
+                </td>
+              </tr>
+              <tr>
+                <td style="width: 30%; padding: 0 14px 0 0 !important">
+                  IDPEL
+                </td>
+                <td style="width: 7px">:</td>
+                <td>
+                  <span class=""> $idpel </span>
+                </td>
+              </tr>
+              <tr>
+                <td style="width: 30%; padding: 0 14px 0 0 !important">NAMA</td>
+                <td style="width: 7px">:</td>
+                <td>
+                  <span class=""> $nama </span>
+                </td>
+              </tr>
+              <tr>
+                <td style="width: 30%; padding: 0 14px 0 0 !important">
+                  TARIF/DAYA
+                </td>
+                <td style="width: 7px">:</td>
+                <td>
+                  <span class=""> $tarif/$daya VA </span>
+                </td>
+              </tr>
+              <tr>
+                <td style="width: 30%; padding: 0 14px 0 0 !important">
+                  NO REF
+                </td>
+                <td style="width: 7px">:</td>
+                <td>
+                  <span class=""> $noref </span>
+                </td>
+              </tr>
+              <tr>
+                <td style="width: 30%; padding: 0 14px 0 0 !important">
+                  RP BAYAR
+                </td>
+                <td style="width: 7px">:</td>
+                <td>
+                  <span class=""> Rp. $rpbayar </span>
+                </td>
+              </tr>
+            </table>
+          </td>
+          <td style="width: 60%" class="td-master">
+            <table>
+              <tr>
+                <td style="width: 30%; padding: 0 14px 0 0 !important">
+                  METERAI
+                </td>
+                <td style="width: 7px">:</td>
+                <td>
+                  <span>Rp.</span>
+                  <span class=""> $materai </span>
+                </td>
+              </tr>
+              <tr>
+                <td style="width: 30%; padding: 0 14px 0 0 !important">PPN</td>
+                <td style="width: 7px">:</td>
+                <td>
+                  <span>Rp.</span>
+                  <span class=""> $ppn </span>
+                </td>
+              </tr>
+              <tr>
+                <td style="width: 30%; padding: 0 14px 0 0 !important">
+                  PBJT-TL
+                </td>
+                <td style="width: 7px">:</td>
+                <td>
+                  <span>Rp.</span>
+                  <span class=""> $ppj </span>
+                </td>
+              </tr>
+              <tr>
+                <td style="width: 30%; padding: 0 14px 0 0 !important">
+                  ANGSURAN
+                </td>
+                <td style="width: 7px">:</td>
+                <td>
+                  <span>Rp.</span>
+                  <span class=""> $angsuran </span>
+                </td>
+              </tr>
+              <tr>
+                <td
+                  style="
+                    width: 30%;
+                    overflow-wrap: break-word;
+                    word-break: normal !important;
+                    padding: 0 14px 0 0 !important;
+                  "
+                >
+                  RP STROOM / TOKEN
+                </td>
+                <td style="width: 7px">:</td>
+                <td>
+                  <span>Rp.</span>
+                  <span class=""> $rptoken </span>
+                </td>
+              </tr>
+              <tr>
+                <td style="width: 30%; padding: 0 14px 0 0 !important">
+                  Jumlah KWh
+                </td>
+                <td style="width: 7px">:</td>
+                <td>
+                  <span class=""> $kwh </span>
+                </td>
+              </tr>
+              <tr>
+                <td
+                  style="
+                    width: 30%;
+                    padding: 0 14px 0 0 !important;
+                    overflow-wrap: break-word;
+                    word-break: normal !important;
+                  "
+                >
+                  ADMIN FEE
+                </td>
+                <td style="width: 7px">:</td>
+                <td>
+                  <span>Rp.</span>
+                  <span class=""> $adminfee </span>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+      <div style="margin: 0">STROOM / TOKEN : $token</div>
+      <div style="margin: 0">
+        TOKEN Listrik -> dapat Cek di PLN Mobile / di CC.PLN(123) :”
+      </div>
+    </div>
+  </body>
+</html>

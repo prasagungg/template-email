@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      td {
+        padding: 0px !important;
+        white-space: nowrap !important;
+      }
+      table {
+        margin-bottom: 0 !important;
+      }
+      @media print {
+        @page {
+          size: auto;
+          margin: 0mm;
+          size: A4;
+        }
+
+        body {
+          width: 210mm;
+          height: 148mm;
+        }
+        td {
+          padding: 0;
+          white-space: nowrap !important;
+        }
+        table {
+          border: none;
+        }
+      }
+      p {
+        margin: 0 !important;
+        padding: 0 !important;
+      }
+    </style>
+  </head>
+  <body style="padding: 10px 0 10px 50px; font-size: 12px">
+    <div style="width: 600px" class="">
+      <div
+        style="text-align: center !important; margin: 8px; font-weight: bold"
+      >
+        STRUK PEMBAYARAN TAGIHAN LISTRIK
+      </div>
+      <table>
+        <tr>
+          <td style="width: 50%; vertical-align: top; padding: 0">
+            <table>
+              <tr>
+                <td style="width: 30%; padding: 0 14px 0 0 !important">
+                  IDPEL
+                </td>
+                <td style="width: 7px">:</td>
+                <td>$idpel</td>
+              </tr>
+              <tr>
+                <td style="padding: 0 14px 0 0 !important">NAMA</td>
+                <td style="width: 7px">:</td>
+                <td>$nama</td>
+              </tr>
+              <tr>
+                <td style="padding: 0 14px 0 0 !important">TARIF / DAYA</td>
+                <td style="width: 7px">:</td>
+                <td>$tarif/$daya VA</td>
+              </tr>
+              <tr>
+                <td style="padding: 0 14px 0 0 !important">RP TAG PLN</td>
+                <td style="width: 7px">:</td>
+                <td>Rp $rptag</td>
+              </tr>
+              <tr>
+                <td style="padding: 0 14px 0 0 !important">NO REF</td>
+                <td style="width: 7px">:</td>
+                <td>$noref</td>
+              </tr>
+            </table>
+          </td>
+          <td style="width: 50%; vertical-align: top; padding: 0">
+            <table>
+              <tr>
+                <td style="width: 30%; padding: 0 14px 0 0 !important">
+                  BL/TH
+                </td>
+                <td style="width: 7px">:</td>
+                <td>$blth</td>
+              </tr>
+              <tr>
+                <td style="padding: 0 14px 0 0 !important">STAND METER</td>
+                <td style="width: 7px">:</td>
+                <td>$standawal-$standakhir</td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+      <p
+        style="
+          padding: 10px 0 !important;
+          font-weight: bold;
+          text-align: center !important;
+        "
+      >
+        PLN menyatakan struk ini sebagai bukti pembayaran yang sah.
+      </p>
+      <table>
+        <tr>
+          <td style="width: 50%; vertical-align: top; padding: 0">
+            <table>
+              <tr>
+                <td style="width: 30%; padding: 0 12px 0 0 !important">
+                  ADMIN FEE
+                </td>
+                <td style="width: 7px">:</td>
+                <td>Rp $adminfee</td>
+              </tr>
+              <tr>
+                <td style="width: 30%; padding: 0 12px 0 0 !important">
+                  TOTAL BAYAR
+                </td>
+                <td style="width: 7px">:</td>
+                <td>Rp $rpbayar</td>
+              </tr>
+            </table>
+          </td>
+          <td style="width: 50%; vertical-align: top; padding: 0">
+            <table>
+              <tr style="visibility: hidden">
+                <td style="width: 30%">BL/TH</td>
+                <td style="width: 7px">:</td>
+                <td>$blth</td>
+              </tr>
+              <tr style="visibility: hidden">
+                <td>STAND METER</td>
+                <td style="width: 7px">:</td>
+                <td>$standawal-$standakhir</td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+      <p style="padding: 10px 0 !important; text-align: center !important">
+        Terimakasih
+      </p>
+      <p style="text-align: center !important">
+        Bayar “Tag+” Postpaid Anda, sebelum jatuh tempo -> : tgl 20
+      </p>
+    </div>
+  </body>
+</html>

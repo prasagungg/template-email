@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @media print {
+        @page {
+          size: auto;
+          margin: 0mm;
+          size: A4;
+        }
+        table {
+          border: none;
+        }
+        body {
+          width: 210mm;
+          height: 148mm;
+        }
+        td {
+          padding: 0 !important;
+        }
+      }
+      td {
+        padding: 0 !important;
+      }
+    </style>
+  </head>
+  <body style="padding: 10px 0 10px 50px; font-size: 12px">
+    <div style="width: 600px">
+      <table>
+        <tbody>
+          <tr>
+            <td
+              colspan="3"
+              class="text-base fw-bold py-2"
+              style="padding: 10px 0px 10px 100px !important"
+            >
+              STRUK NON TAGIHAN LISTRIK
+            </td>
+          </tr>
+          <tr>
+            <td style="width: 30%">TRANSAKSI</td>
+            <td style="width: 5px">:</td>
+            <td>$transaksi</td>
+          </tr>
+          <tr>
+            <td>NO REGISTRASI</td>
+            <td>:</td>
+            <td>$kodebooking</td>
+          </tr>
+          <tr>
+            <td>TGL REGISTRASI</td>
+            <td>:</td>
+            <td>$tgl_transaksi</td>
+          </tr>
+          <tr>
+            <td>NAMA</td>
+            <td>:</td>
+            <td>$nama</td>
+          </tr>
+          <tr>
+            <td>IDPEL</td>
+            <td>:</td>
+            <td>$idpel</td>
+          </tr>
+          <tr>
+            <td>BIAYA PLN</td>
+            <td>:</td>
+            <td>Rp. $biaya</td>
+          </tr>
+          <tr>
+            <td>NO REF</td>
+            <td>:</td>
+            <td>$noref</td>
+          </tr>
+          <tr>
+            <td
+              colspan="3"
+              class=""
+              style="padding: 10px 0px 10px 100px !important; font-weight: 700"
+            >
+              PLN menyatakan struk ini sebagai bukti pembayaran yang sah.
+            </td>
+          </tr>
+          <tr>
+            <td>ADMIN BANK</td>
+            <td>:</td>
+            <td>Rp. $adminfee</td>
+          </tr>
+          <tr>
+            <td>TOTAL BAYAR</td>
+            <td>:</td>
+            <td>Rp. $rpbayar</td>
+          </tr>
+          <tr>
+            <td
+              colspan="3"
+              class=""
+              style="padding: 10px 0px 10px 100px !important; font-weight: 700"
+            >
+              Bayar “Tag+” Postpaid Anda, sebelum jatuh tempo -> : tgl 20
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
