@@ -6,6 +6,26 @@
 >
   <head>
     <style>
+      body {
+        padding: 10px 0 10px 50px;
+        font-size: 12px;
+        font-family: Arial, sans-serif;
+      }
+
+      .fw-bold {
+        font-weight: bold;
+      }
+
+      .table {
+        width: 100%;
+        margin: 0 !important;
+        border-collapse: collapse;
+      }
+
+      .table-borderless td {
+        border: none;
+      }
+
       td {
         word-break: break-all;
         padding: 0 !important;
@@ -13,6 +33,14 @@
 
       .td-master {
         padding-right: 6px !important;
+      }
+
+      .d-flex {
+        display: flex;
+      }
+
+      .align-items-center {
+        align-items: center;
       }
 
       @media print {
@@ -26,169 +54,138 @@
           width: 210mm;
           height: 148mm;
         }
+
         td {
           padding: 0 !important;
-        }
-
-        table {
-          border: none;
         }
       }
     </style>
   </head>
-  <body style="padding: 10px 0 10px 50px; font-size: 12px">
+  <body>
+
     <div style="width: 800px">
-      <div class="fw-bold" style="padding: 10px 0px 10px 100px !important">
+      <div style="padding: 10px 0px 10px 200px !important; background-color: #F7FAFF; font-weight: bold; color: #BABBC0; margin-right: 200px !important;">
+        Pembelian Token 50000
+      </div>
+      <div  class="fw-bold" style="padding: 10px 0px 10px 150px !important;">
         STRUK PEMBELIAN LISTRIK PRABAYAR
       </div>
-      <table style="margin: 0 !important">
+      <table class="table table-borderless">
         <tr>
           <td style="width: 40%" class="td-master">
-            <table>
+            <table class="table table-borderless"
               <tr>
                 <td style="width: 30%; padding: 0 14px 0 0 !important">
                   NO METER
                 </td>
                 <td style="width: 7px">:</td>
-                <td>
-                  <span class=""> $nometer </span>
-                </td>
+                <td><span class=""> $nometer </span></td>
               </tr>
               <tr>
                 <td style="width: 30%; padding: 0 14px 0 0 !important">
                   IDPEL
                 </td>
                 <td style="width: 7px">:</td>
-                <td>
-                  <span class=""> $idpel </span>
-                </td>
+                <td><span class=""> $idpel </span></td>
               </tr>
               <tr>
                 <td style="width: 30%; padding: 0 14px 0 0 !important">NAMA</td>
                 <td style="width: 7px">:</td>
-                <td>
-                  <span class=""> $nama </span>
-                </td>
+                <td><span class=""> $nama </span></td>
               </tr>
               <tr>
                 <td style="width: 30%; padding: 0 14px 0 0 !important">
                   TARIF/DAYA
                 </td>
                 <td style="width: 7px">:</td>
-                <td>
-                  <span class=""> $tarif/$daya VA </span>
-                </td>
+                <td><span class=""> $tarif/$daya VA </span></td>
               </tr>
               <tr>
                 <td style="width: 30%; padding: 0 14px 0 0 !important">
                   NO REF
                 </td>
                 <td style="width: 7px">:</td>
-                <td>
-                  <span class=""> $noref </span>
-                </td>
+                <td><span class=""> $noref </span></td>
               </tr>
               <tr>
                 <td style="width: 30%; padding: 0 14px 0 0 !important">
                   RP BAYAR
                 </td>
                 <td style="width: 7px">:</td>
-                <td>
-                  <span class=""> Rp. $rpbayar </span>
-                </td>
+                <td><span class=""> Rp. $rpbayar </span></td>
               </tr>
             </table>
           </td>
           <td style="width: 60%" class="td-master">
-            <table>
+            <table class="table table-borderless">
               <tr>
                 <td style="width: 30%; padding: 0 14px 0 0 !important">
                   METERAI
                 </td>
                 <td style="width: 7px">:</td>
-                <td>
-                  <span>Rp.</span>
-                  <span class=""> $materai </span>
-                </td>
+                <td><span>Rp.</span><span class=""> $materai </span></td>
               </tr>
               <tr>
                 <td style="width: 30%; padding: 0 14px 0 0 !important">PPN</td>
                 <td style="width: 7px">:</td>
-                <td>
-                  <span>Rp.</span>
-                  <span class=""> $ppn </span>
-                </td>
+                <td><span>Rp.</span><span class=""> $ppn </span></td>
               </tr>
               <tr>
                 <td style="width: 30%; padding: 0 14px 0 0 !important">
                   PBJT-TL
                 </td>
                 <td style="width: 7px">:</td>
-                <td>
-                  <span>Rp.</span>
-                  <span class=""> $ppj </span>
-                </td>
+                <td><span>Rp.</span><span class=""> $bpjt-tl</span></td>
               </tr>
               <tr>
                 <td style="width: 30%; padding: 0 14px 0 0 !important">
                   ANGSURAN
                 </td>
                 <td style="width: 7px">:</td>
-                <td>
-                  <span>Rp.</span>
-                  <span class=""> $angsuran </span>
-                </td>
-              </tr>
-              <tr>
-                <td
-                  style="
-                    width: 30%;
-                    overflow-wrap: break-word;
-                    word-break: normal !important;
-                    padding: 0 14px 0 0 !important;
-                  "
-                >
-                  RP STROOM / TOKEN
-                </td>
-                <td style="width: 7px">:</td>
-                <td>
-                  <span>Rp.</span>
-                  <span class=""> $rptoken </span>
-                </td>
+                <td><span>Rp.</span><span class=""> $angsuran </span></td>
               </tr>
               <tr>
                 <td style="width: 30%; padding: 0 14px 0 0 !important">
-                  Jumlah KWh
+                  RP STROOM / TOKEN
                 </td>
                 <td style="width: 7px">:</td>
-                <td>
-                  <span class=""> $kwh </span>
-                </td>
+                <td><span>Rp.</span><span class=""> $rptoken </span></td>
               </tr>
               <tr>
-                <td
-                  style="
-                    width: 30%;
-                    padding: 0 14px 0 0 !important;
-                    overflow-wrap: break-word;
-                    word-break: normal !important;
-                  "
-                >
+                <td style="width: 30%; padding: 0 14px 0 0 !important">
+                  JUMLAH KWH
+                </td>
+                <td style="width: 7px">:</td>
+                <td><span class=""> $kwh </span></td>
+              </tr>
+              <tr>
+                <td style="width: 30%; padding: 0 14px 0 0 !important">
                   ADMIN FEE
                 </td>
                 <td style="width: 7px">:</td>
-                <td>
-                  <span>Rp.</span>
-                  <span class=""> $adminfee </span>
-                </td>
+                <td><span>Rp.</span><span class=""> $adminfee </span></td>
               </tr>
             </table>
           </td>
         </tr>
+        <tr>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            STROOM/TOKEN : $token
+          </td>
+        </tr>
+        <tr>
+          <td colspan="3">
+            
+          TOKEN Listrik -> dapat Cek di PLN Mobile / di CC.PLN(123) :”
+          </td>
+        </tr>
       </table>
-      <div style="margin: 0">STROOM / TOKEN : $token</div>
-      <div style="margin: 0">
-        TOKEN Listrik -> dapat Cek di PLN Mobile / di CC.PLN(123) :”
+      
+      <div style="padding: 10px 0px 10px 150px !important; background-color: #F7FAFF; color: #BABBC0; margin-right: 200px !important; margin-top: 50px;">
+        © 2024 PLN Mobile. All rights reserved.
       </div>
     </div>
   </body>
